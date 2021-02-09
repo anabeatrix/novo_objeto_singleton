@@ -8,7 +8,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/config")
+@Path("/relatorio")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class ConfigResource {
@@ -22,7 +22,6 @@ public class ConfigResource {
 
     @PUT
     public void updateConfig(Config newConfig) {
-        config.setFormatoRelatorios(newConfig.getFormatoRelatorios());
-        config.setTipoGraficos(newConfig.getTipoGraficos());
+        this.config = newConfig;
     }
 }
