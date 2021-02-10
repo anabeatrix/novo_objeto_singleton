@@ -3,10 +3,10 @@
 Na aplicação temos dois serviços REST disponíveis: /config e /relatorio. :page_with_curl:
 
 As alterações propostas abaixo foram implementadas: 
-- Altere o código de tal método para this.config = newConfig; 
-- Crie uma nova classe de recurso chamada RelatorioResource  como uma cópia da ConfigResource, alterando a anotação @Path para para @Path("/relatorio")
+- Altere o código do método `updateConfig(Config newConfig)` para `this.config = newConfig;` 
+- Crie uma nova classe de recurso chamada `RelatorioResource`  como uma cópia da `ConfigResource`, alterando a anotação `@Path` para `@Path("/relatorio")`
 
-1. Acesse os métodos nos dois e informe qual o problema ocorrido com a alteração do código do updateConfig.
+1. Acesse os métodos nos dois e informe qual o problema ocorrido com a alteração do código do `updateConfig`.
 
 É preciso ter em mente que o padrão de projeto **_Singleton_ "garante a existência de uma ÚNICA instância de uma classe, mantendo um ponto de acesso global ao seu objeto"**.
 
